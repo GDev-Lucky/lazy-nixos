@@ -38,21 +38,18 @@
 		isNormalUser = false;
 		createHome = false;
 		shell = pkgs.fish;
-		hashedPassword = "$6$j2vJATnI7wIg554R$i.cL4wYRPLMfTb0AY3sgSu9G7kwuDOrXl39JxBF4sgUY0IOH1lBUC3F68O6DguAsyQYl5OOU4fUKBodGEI2Uz0";
-
 	};
 
 	users.users.lucky = {
 		isNormalUser = true;
 		createHome = true;
 		shell = pkgs.fish;
-		hashedPassword = "$6$5i9sMO6rE4owcGe0$qKT6ZYHXbS6ZkbmmzXSj4quQvzpELHMoKDMeAa.6xsKoddRdcSacC010IoGq5cf3dut0YUjWCWvvNcfbdlM8H/";
 		extraGroups = [ "wheel" ];
 	};
 
 	home-manager = {
 		extraSpecialArgs = { inherit inputs; };
-		users = { limitedleaf = import ./home.nix; };
+		users = { lucky = import ./home.nix; };
 	};
 
 

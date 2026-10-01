@@ -42,7 +42,7 @@
 
 	};
 
-	users.users.limitedleaf = {
+	users.users.lucky = {
 		isNormalUser = true;
 		createHome = true;
 		shell = pkgs.fish;

@@ -1,6 +1,6 @@
 [
 	./cli/git.nix
-	./cli/nixvim.nix
+	./cli/neovim/default.nix
 	
 	./gui/hyprland.nix
 ]

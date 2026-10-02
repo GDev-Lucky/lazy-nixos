@@ -16,7 +16,7 @@
 	boot.loader.systemd-boot.enable = true;
 	boot.loader.efi.canTouchEfiVariables = true;
 
-	users.mutableUsers = false;
+	users.mutableUsers = true;
 
 	programs.hyprland.enable = true;
 	programs.hyprland.package = inputs.hyprland.packages."${pkgs.system}".hyprland;

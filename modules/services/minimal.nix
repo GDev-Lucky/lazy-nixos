@@ -7,9 +7,25 @@
 
 	config = mkIf config.minimal.enable {
 		environment.defaultPackages = [];
-		documentation.enable = false;
-		services.openssh.enable = false;
 		environment.systemPackages = with pkgs; [ gcc git htop ];
+
+		services.openssh.enable = false;
+		services.lvm.enable = false;
+		services.printing.enable = false;
+		services.avahi.enable = false;
+		services.gvfs.enable = false;
+		
+		boot.bcache.enable = false;
+
+		programs.nano.enable = false;
+		programs.command-not-found.enable = false;
+		
+		documentation.enable = false;
+		documentation.man.enable = false;
+		documentation.info.enable = false;
+		documentation.nixos.enable = false;
+		documentation.doc.enable = false;
+		
 	};
 
 }

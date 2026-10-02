@@ -1,7 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-	imports = import ../../home-modules/bundle.nix;
 
 	home.username = "lucky";
 	home.homeDirectory = "/home/lucky";

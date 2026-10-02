@@ -49,6 +49,7 @@
 
 	home-manager = {
 		extraSpecialArgs = { inherit inputs; };
+		sharedModules = import ../../home-modules/bundle.nix;
 		users = { lucky = import ./home.nix; };
 	};
 

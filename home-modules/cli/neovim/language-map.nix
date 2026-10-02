@@ -16,8 +16,7 @@
 							"(builtins.getFlake \"/etc/nixos\").nixosConfigurations.nixos.options";
 
 						home-manager.expr =
-							"(builtins.getFlake \"/etc/nixos\").nixosConfigurations.nixos.options.home-manager.users.value.lucky";
-					};
+							"(builtins.getFlake \"/etc/nixos\").nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []";					};
 				};
 			};
 		};
